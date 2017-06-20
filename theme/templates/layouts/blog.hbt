@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{> head}}
+<body>
+  {{> header}}
+    <main>
+    
+     <div class="hero blog">
+            <div class="container">
+              <div class="clear">
+                <section class="col-full">
+                <h1> {{#unless title}}
+                {{site.title}} Blog
+                {{else}}
+                {{ title }}
+                {{/unless}}</h1>
+                <small class="page-no">Page {{ this.pagination.num }}</small>
+                <small class="date-range">From 
+                {{#each (limit collections.posts this.pagination.end this.pagination.start)}}
+                 <span class="date"> 
+                 {{#if @first}}
+                 {{#unless this.date}}
+                DATE ERROR
+                {{else}}
+                {{#intl locales="en-US"}}{{formatDate date day="numeric" month="long" year="numeric" locale="en-us"}}{{/intl}}
+                {{/unless}}
+                 {{/if}}
+                 {{#if @last}}
+                 {{#unless this.date}}
+                DATE ERROR
+                {{else}}
+                {{#intl locales="en-US"}}{{formatDate date day="numeric" month="long" year="numeric" locale="en-us"}}{{/intl}}
+                {{/unless}}
+                 {{/if}}
+                 </span>
+        {{/each}}
+                </small>
+                </section>
+              </div>
+            </div>
+            <div class="featured-image" style="background-image: url('{{relative this.image "/assets/images/"}}');"></div>
+            
+        </div>
+        <div class="container">
+            <div class="clear">
+                {{> posts}}
+                {{> sidebar}}
+            </div>
+            <div class="clear">
+            {{#if this.pagination}}
+    <nav class="pagination col-12 col-8-m">
+        {{#if this.pagination.next}}
+            <a class="left" href="/{{this.pagination.next.path}}">&lt; Prev</a>
+        {{/if}}
+
+        {{#if this.pagination.prev}}
+            <a class="right" href="/{{this.pagination.prev.path}}">Next &gt;</a>
+        {{/if}}
+    </nav>
+{{/if}}
+            </div>
+        </div>
+    </main>
+  {{> footer}}
+    <script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{> head}}
+<body>
+  {{> header}}
+    <main>
+    
+     <div class="hero tag">
+            <div class="container">
+              <div class="clear">
+                <section class="col-full">
+                <small>posts tagged</small>
+                <h1>{{ title }}</h1>
+                </section>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="clear">
+                                <ul class="col-8 posts">
+
+       {{#each pagination.files}}
+           <li>
+                        <h2><a href="/{{this.path}}">{{this.title}}</a></h2>
+<small class="date"> {{#unless this.date}}
+                DATE ERROR
+                {{else}}
+                {{#intl locales="en-US"}}{{formatDate date day="numeric" month="long" year="numeric" locale="en-us"}}{{/intl}}
+                {{/unless}}</small>
+                       <p class="subheading">
+                           {{#unless this.abstract}}
+                {{strip excerpt}}
+              {{else}}
+                {{this.abstract}}
+              {{/unless}}
+                       </p>
+              
+                <a class="more" href="/{{this.path}}">Read More</a>
+                       <ul class="tags">
+                        {{#each this.tags}}
+                            <li><a href="/tags/{{this}}">{{this}}</a></li>
+                        {{/each}}</ul>
+            </li>
+        {{/each}}
+        </ul>
+                {{> sidebar}}
+            </div>
+            <div class="clear">{{#if this.pagination}}
+    <nav class="pagination col-8">
+        {{#if this.pagination.next}}
+            <a href="/{{this.pagination.next.path}}">&lt; Prev</a>
+        {{/if}}
+
+        {{#if this.pagination.prev}}
+            <a href="/{{this.pagination.prev.path}}">Next &gt;</a>
+        {{/if}}
+    </nav>
+{{/if}}
+            </div>
+        </div>
+    </main>
+  {{> footer}}
+    <script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

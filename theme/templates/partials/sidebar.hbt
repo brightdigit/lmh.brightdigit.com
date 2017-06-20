@@ -1,0 +1,52 @@
+
+                <ul class="col-4 none block-m sidebar">
+                    <li>
+                        <h2>Contact Info</h2>
+                        <div class="vcard">
+                            <abbr class="fn org" title="Southern Alberta Institute of Technology">SAIT Polytechnic</abbr>
+                            <address class="adr">
+                                <span class="street-address">1301 16 Avenue NW</span>
+                                <br>
+                                <span class="locality">Calgary</span>
+                                <abbr class="region" title="Alberta">AB</abbr>
+                                <span class="country-name">Canada</span>
+                                <span class="postal-code">T2M 0L4</span>
+                            <address>Phone:<a class="tel" href="tel:+14032847248">(403)284-7248</a>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Tags</h2>
+                        <ul class="tags">
+                        {{#each this.allTags}}
+                            <li><a href="/tags/{{@key}}">{{@key}}</a></li>
+                        {{/each}}
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Latest Posts</h2>
+                        <ul class="latest-posts">
+                        {{#each (limit collections.posts 4 0)}}
+
+                            <li>
+                                <a href="/{{this.path}}">
+                                    <h3>{{this.title}}</h3>
+                                    <small class="date">{{#unless this.date}}
+                DATE ERROR
+                {{else}}
+                {{#intl locales="en-US"}}{{formatDate date day="numeric" month="long" year="numeric" locale="en-us"}}{{/intl}}
+                {{/unless}}</small>
+                                </a>
+                            </li>
+        {{/each}}
+                    </li>
+                    <li>
+                        <h2>Search Bar</h2>
+                        <div id="contentsearch">
+                          <form id="searchForm" name="searchForm" action="http://google.com/search">
+                            <input name="q" type="text" value="search" maxlength="200" />
+                            <input name="q" type="hidden" value="site:mysite.com"/>
+                            <input name="submit" type="submit" value="Search" />
+                          </form>
+                        </div>
+                    </li>
+                </ul>

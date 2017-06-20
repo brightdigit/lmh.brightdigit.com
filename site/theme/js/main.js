@@ -1,0 +1,1 @@
+require("../../../theme/assets/js/main.js");

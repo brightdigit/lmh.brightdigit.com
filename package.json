@@ -1,0 +1,153 @@
+{
+  "name": "lmh.brightdigit.com",
+  "version": "0.1.0",
+  "description": "template for s3 aws / heroku app",
+  "engines": {
+    "node": "6"
+  },
+  "license": "ISC",
+  "homepage": "http://lmh.brightdigit.com",
+  "plazmiq": {
+    "metadata": {
+      "site": {
+        "title": "lmh.brightdigit.com",
+        "url": "http://lmh.brightdigit.com"
+      }
+    },
+    "pages": {
+      "blogIndex": "blog"
+    },
+    "stages": {
+      "production": {
+        "build": {
+          "uglify": true,
+          "rev": true
+        },
+        "server": {
+          "port": 8080
+        }
+      },
+      "development": {
+        "publishing": {
+          "draft": true,
+          "future": true
+        },
+        "server": {
+          "port": 8081
+        }
+      }
+    },
+    "favicon": {
+      "masterPicture": "./site/theme/assets/images/logo.svg",
+      "dest": "./.tmp/favicons",
+      "iconsPath": "/",
+      "design": {
+        "ios": {
+          "picture_aspect": "background_and_margin",
+          "background_color": "#ffffff",
+          "margin": "25%",
+          "assets": {
+            "ios6_and_prior_icons": false,
+            "ios7_and_later_icons": false,
+            "precomposed_icons": false,
+            "declare_only_default_icon": true
+          }
+        },
+        "desktop_browser": [],
+        "windows": {
+          "picture_aspect": "no_change",
+          "background_color": "#ffffff",
+          "on_conflict": "override",
+          "assets": {
+            "windows_80_ie_10_tile": false,
+            "windows_10_ie_11_edge_tiles": {
+              "small": false,
+              "medium": true,
+              "big": false,
+              "rectangle": false
+            }
+          }
+        },
+        "android_chrome": {
+          "picture_aspect": "shadow",
+          "theme_color": "#ffffff",
+          "manifest": {
+            "name": "Plazmiq",
+            "display": "standalone",
+            "orientation": "not_set",
+            "on_conflict": "override",
+            "declared": true
+          },
+          "assets": {
+            "legacy_icon": false,
+            "low_resolution_icons": false
+          }
+        },
+        "safari_pinned_tab": {
+          "picture_aspect": "silhouette",
+          "theme_color": "#f205c7"
+        }
+      },
+      "settings": {
+        "compression": 5,
+        "scaling_algorithm": "Mitchell",
+        "error_on_image_too_small": false
+      },
+      "markupFile": "faviconData.json"
+    },
+    "fonts": [
+      {
+        "source": "node_modules/font-awesome",
+        "name": "font-awesome",
+        "stylesheet": "scss/font-awesome.scss"
+      },
+      {
+        "type": "web",
+        "name": "Kanit",
+        "weights": [
+          100,
+          400,
+          800
+        ]
+      }
+    ],
+    "publishing": {
+      "type": "aws"
+    },
+    "services": {
+      "MailChimp": {
+        "folders": {
+          "template": null,
+          "files": null,
+          "campaign": null
+        }
+      },
+      "Pocket": {
+        "sources": [
+          {
+            "template": "templates/includes/draft.md",
+            "parameters": {
+              "detailType": "complete",
+              "sort": "oldest",
+              "state": "archive"
+            },
+            "path": "posts/drafts",
+            "filename": "{{zerofill ordinal 4}}.{{slugify title}}.md"
+          }
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "async": "^2.4.0",
+    "browserify-shim": "^3.8.12",
+    "font-awesome": "fortawesome/Font-Awesome",
+    "getbase": "^3.2.4"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {}
+}

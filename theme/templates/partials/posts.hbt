@@ -1,0 +1,28 @@
+                <ul class="col-8-m col-12 posts">
+
+       {{#each (limit collections.posts this.pagination.end this.pagination.start)}}
+           <li>
+                        <h2><a href="/{{this.path}}">{{this.title}}</a></h2>
+<small class="date"> {{#unless this.date}}
+                DATE ERROR
+                {{else}}
+                {{#intl locales="en-US"}}{{formatDate date day="numeric" month="long" year="numeric" locale="en-us"}}{{/intl}}
+                {{/unless}}</small>
+                <div class="featured-image" style="background-image: url('{{relative this.image "/assets/images/"}}');">
+                </div>
+                       <p class="subheading">
+                           {{#unless this.abstract}}
+                {{strip excerpt}}
+              {{else}}
+                {{this.abstract}}
+              {{/unless}}
+                       </p>
+              
+                <a class="more" href="/{{this.path}}">Read More</a>
+                       <ul class="tags">
+                        {{#each this.tags}}
+                            <li><a href="/tags/{{this}}">{{this}}</a></li>
+                        {{/each}}</ul>
+            </li>
+        {{/each}}
+        </ul>

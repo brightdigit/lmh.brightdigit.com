@@ -1,0 +1,11 @@
+
+    <footer>
+        <div class="container">
+            <div class="clear">
+                <ul class="col-full">
+                    <li>© Copyright BrightDigit
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>

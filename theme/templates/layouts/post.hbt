@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{> head}}
+<body>
+  {{> header}}
+    <main>
+     <div class="hero">
+            <div class="container">
+              <div class="clear">
+                <section class="col-full">
+                <h1>{{ title }}</h1>
+                <p class="date">
+                    {{#intl locales="en-US"}}{{formatDate date day="numeric" month="long" year="numeric" locale="en-us"}}{{/intl}}
+                </p>
+                </section>
+              </div>
+            </div>
+            <div class="featured-image" style="background-image: url('{{relative this.image "/assets/images/"}}');"></div>
+
+        </div>
+        <div class="container">
+            <div class="clear">
+              <div class="col-8-m col-12 post-content">
+                {{ safe contents }}
+              </div>
+                {{> sidebar}}
+            </div>
+            <div class="clear">
+    <nav class="pagination col-12 col-8-m">
+        {{#if next}}
+            <a class="left" href="/{{next.path}}">&lt; {{next.title}}</a>
+        {{/if}}
+
+        {{#if previous}}
+            <a class="right" href="/{{previous.path}}">{{previous.title}} &gt;</a>
+        {{/if}}
+    </nav>
+            </div>
+        </div>
+    </main>
+  {{> footer}}
+    <script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+$fa-font-path: "/assets/fonts/font-awesome/fonts";
+@import "../../../../.tmp/fonts/fonts.scss";
+@import "../../../../node_modules/getbase/src/scss/styles.scss";
+html,
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+}
+
+strong,
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+    background-color: rgba(200, 200, 200, 0.5);
+    padding: 10em 0px 5em;
+    @include breakpoint(m) {
+        padding-top: 5em;
+    }
+    .featured-image {
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+    }
+    p {
+        margin: 0;
+        font-size: 1.5em;
+    }
+    h1,
+    p {
+        text-align: center;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    &.tag section small:first-child {
+        text-align: center;
+        display: block;
+        font-size: 1em;
+    }
+    &.blog section small {
+    	display: block;
+width: 100%;
+clear: both;
+text-align: center;
+		&.page-no {
+			font-size: 1.15em;
+		}
+		&.date-range {
+			line-height: 2.5em;
+		}
+    }
+}
+
+header {
+    width: 100%;
+    z-index: 100;
+    background-color: #FFF;
+    border-bottom: solid #CCC 1px;
+    & > div.container {
+        & > nav {
+            padding: 25px 0px;
+            & > ul {
+                list-style: none;
+                margin: 0;
+                & > li {
+                    display: inline-block;
+                    float: left;
+                    margin-right: 20px;
+                    &.brand {
+                        font-weight: 400;
+                    }
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .post-content {
+        padding: 2em 0px;
+        margin-top: 30px;
+    }
+    ul {
+        list-style: none;
+        &.posts {
+            & > li {
+                border-bottom: 1px #CCC solid;
+                padding: 3em 0;
+                & > h2 > a {
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                &:last-child {
+                    border: none;
+                    padding-bottom: 0;
+                }
+                .subheading {
+                    margin: 10px 0px;
+                }
+                .featured-image {
+                    height: 180px;
+                    width: 100%;
+                    margin: 10px 0px;
+                    background-size: cover;
+                }
+                a.more {
+                    background-color: #333;
+                    padding: 0.5em;
+                    margin-top: 1em;
+                    display: inline-block;
+                    color: #DDD;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: #222;
+                        color: #FFF;
+                    }
+                }
+                ul.tags {
+                    list-style: none;
+                    padding: 0;
+                    margin: 1em 0px 0px;
+                    li {
+                        display: inline-block;
+                        margin: 3px;
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                        a {
+                            padding: 2px;
+                            color: #666;
+                            font-size: 0.9em;
+                            text-decoration: none;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.sidebar {
+            font-size: 0.9em;
+            padding: 2em 30px;
+            & > li {
+                padding: 1em 0px;
+                h2 {
+                    font-size: 11pt;
+                    text-decoration: underline;
+                }
+                ul.tags {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: inline-block;
+                        margin: 3px;
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                        a {
+                            padding: 2px;
+                            color: #666;
+                            text-decoration: none;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                ul.latest-posts {
+                    padding: 0;
+                    margin: 1em 0 0;
+                    li {
+                        h3 {
+                            font-size: 1.1em;
+                            font-weight: 100;
+                            margin: 0;
+                            line-height: 1em;
+                        }
+                        .date {
+                            color: #999;
+                            font-size: 0.8em;
+                        }
+                        a {
+                            display: block;
+                            padding: 0.5em 0;
+                            text-decoration: none;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        &:first-child {
+                            a {
+                                padding-top: 0;
+                            }
+                        }
+                        &:last-child {
+                            a {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav.pagination {
+    	padding-top: 1em;
+		padding-bottom: 2em;
+		border-top: 1px #ccc solid;
+        a {
+            background-color: #333;
+            padding: 0.5em;
+            margin-top: 1em;
+            display: inline-block;
+            color: #DDD;
+            text-decoration: none;
+            max-width: 40%;
+            &:hover {
+                background-color: #222;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #000;
+    color: #EEE;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+ul.col-full {
+    padding-left: 0;
+    padding-right: 0;
+}

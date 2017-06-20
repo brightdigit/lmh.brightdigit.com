@@ -1,0 +1,11 @@
+<header class="fixed static-m">
+    <div class="container">
+        <nav class="clear">
+            <ul class="col-full">
+                <li class="brand"><a href="/">{{site.title}}</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

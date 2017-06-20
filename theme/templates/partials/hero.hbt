@@ -1,0 +1,19 @@
+
+        <div class="hero">
+            <div class="container">
+            	<div class="clear">
+            		<section class="col-full">
+                <h1>
+                {{#unless title}}
+                {{ site.title }}
+                {{else}}
+                {{ title }}
+                {{/unless}}
+                </h1>
+                <p class="subheading">
+                    Vestibulum et mi lacus. Pellentesque habitant morbi tristique senectus et netus et.
+                </p>
+                </section>
+            	</div>
+            </div>
+        </div>
