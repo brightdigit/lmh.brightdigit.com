@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Road Trip by TEMPLATED</title>
+		<title>{{site.title}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="/css/main.css" />
@@ -15,18 +15,18 @@
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="index.html">Road Trip <span>by TEMPLATED</span></a></div>
-				<a href="#menu"><span>Menu</span></a>
+				<div class="logo"><a href="index.html">Sponsored By </a></div>
+
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
+			<!-- <nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="generic.html">Generic</a></li>
 					<li><a href="elements.html">Elements</a></li>
 				</ul>
-			</nav>
+			</nav> -->
 
 		<!-- Banner -->
 		<!--
@@ -37,7 +37,7 @@
 			<section id="banner" class="bg-img" data-bg="banner.jpg">
 				<div class="inner">
 					<header>
-						<h1>This is Road Trip</h1>
+						<h1>{{site.title}}</h1>
 					</header>
 				</div>
 				<a href="#one" class="more">Learn More</a>
@@ -48,18 +48,14 @@
 				<div class="inner">
 					<article class="box">
 						<header>
-							<h2>Nibh non lobortis mus nibh</h2>
-							<p>01.01.2017</p>
+							<h2>About Us</h2>
 						</header>
 						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+							<p>Lansing Marketing Hackers is a community dedicated to marketers and techies who want to learn how to be power users in marketing apps and services.</p>
 						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
 					</article>
 				</div>
-				<a href="#two" class="more">Learn More</a>
+				<a href="#two" class="more">Give Us Your Input</a>
 			</section>
 
 		<!-- Two -->
@@ -67,18 +63,17 @@
 				<div class="inner">
 					<article class="box">
 						<header>
-							<h2>Mus elit a ultricies at</h2>
-							<p>12.21.2016</p>
+							<h2>Give Us Your Input</h2>
 						</header>
 						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+							<p>Take 5 minutes of your time and help us make our first event great. Fill out our survey and let us know your thoughts on how Lansing Marketing Hackers can help you.</p>
 						</div>
 						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
+							<a href="https://brightdigit.typeform.com/to/vYDCWR" target="_blank" class="button alt">Fill Out Our Survey</a>
 						</footer>
 					</article>
 				</div>
-				<a href="#three" class="more">Learn More</a>
+				<a href="#three" class="more">Join the Community</a>
 			</section>
 
 		<!-- Three -->
@@ -86,62 +81,25 @@
 				<div class="inner">
 					<article class="box">
 						<header>
-							<h2>Varius a cursus aliquet</h2>
-							<p>11.11.2016</p>
+							<h2>Join Our Community</h2>
 						</header>
 						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+							<p>Join our Facebook and Meetup communities to stay up to date on events as well as get the latest tips on marketing technology.</p>
 						</div>
 						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
+							<a href="https://www.meetup.com/Lansing-Marketing-Hackers/" class="button alt">Meetup</a>
+							<a href="https://www.facebook.com/Lansing-Marketing-Hackers-1962945503936436/" class="button alt">Facebook</a>
 						</footer>
 					</article>
 				</div>
-				<a href="#four" class="more">Learn More</a>
 			</section>
 
-		<!-- Four -->
-			<section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
-				<div class="inner">
-					<article class="box">
-						<header>
-							<h2>Luctus blandit mi lectus in nascetur</h2>
-							<p>10.30.2016</p>
-						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
-						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
-						</footer>
-					</article>
-				</div>
-			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
+			<footer id="footer" class="wrapper post bg-img" data-bg="banner.jpg">
 				<div class="inner">
 
-					<h2>Contact Me</h2>
-
-					<form action="#" method="post">
-
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name">
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input value="Send Message" class="button alt" type="submit"></li>
-						</ul>
-					</form>
+					<div class="typeform-widget" data-url="https://brightdigit.typeform.com/to/vYDCWR" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" > powered by <a href="https://www.typeform.com/examples/surveys/?utm_campaign=vYDCWR&amp;utm_source=typeform.com-3385379-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-onlinesurvey&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
 
 					<ul class="icons">
 						<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>

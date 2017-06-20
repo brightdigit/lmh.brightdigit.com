@@ -10,7 +10,7 @@
   "plazmiq": {
     "metadata": {
       "site": {
-        "title": "lmh.brightdigit.com",
+        "title": "Lansing Marketing Hackers",
         "url": "http://lmh.brightdigit.com"
       }
     },
@@ -107,11 +107,20 @@
       },
       {
         "type": "web",
-        "name": "Kanit",
+        "name": "Playfair Display",
         "weights": [
-          100,
           400,
-          800
+          700,
+          900
+        ]
+      },
+      {
+        "type": "web",
+        "name": "Playfair Display SC",
+        "weights": [
+          400,
+          700,
+          900
         ]
       }
     ],

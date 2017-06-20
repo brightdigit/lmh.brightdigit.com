@@ -1,2 +1,11 @@
 @import "../theme/scss/main.scss";
 
+#banner {
+  h1 {
+  			font-family: "Playfair Display SC", serif;
+  }
+}
+
+body, input, select, textarea {
+  font-family: "Playfair Display", serif;
+}
