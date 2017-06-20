@@ -21,13 +21,17 @@
       "production": {
         "build": {
           "uglify": true,
-          "rev": true
+          "rev": true,
+          "critical" : false
         },
         "server": {
           "port": 8080
         }
       },
       "development": {
+        "build": {
+          "critical" : false
+        },
         "publishing": {
           "draft": true,
           "future": true
@@ -142,12 +146,37 @@
     "async": "^2.4.0",
     "browserify-shim": "^3.8.12",
     "font-awesome": "fortawesome/Font-Awesome",
-    "getbase": "^3.2.4"
+    "getbase": "^3.2.4",
+    "jquery": "^3.2.1",
+    "jquery.scrollex": "git+https://github.com/brightdigit/jquery.scrollex.git",
+    "skel": "git+https://github.com/brightdigit/skel.git",
+    "typed.js": "git+https://github.com/brightdigit/typed.js.git"
   },
   "browserify": {
     "transform": [
       "browserify-shim"
     ]
   },
-  "browserify-shim": {}
+  "browserify-shim": {
+    "jquery-placeholder": {
+      "depends": [
+        "jquery:jquery"
+      ]
+    },
+    "jquery.scrolly": {
+      "depends": [
+        "jquery:jquery"
+      ]
+    },
+    "jquery.scrollex": {
+      "depends": [
+        "jquery:jquery"
+      ]
+    },
+    "typed.js": {
+      "depends": [
+        "jquery:jquery"
+      ]
+    }
+  }
 }
