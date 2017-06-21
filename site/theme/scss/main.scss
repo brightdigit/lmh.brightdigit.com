@@ -15,9 +15,22 @@ body, input, select, textarea {
   display: block;
   margin-top: -15px;
   padding: 40px;
+  color: #000;
   .logo {
-    a {
-      color: #000;
+    width: 100%;
+    & > * {
+      float: left;
+    }
+    .icons {
+      float: right;
+      position: relative;
+      right: 50px;
+      a {
+          color: #3D2B1A;
+          &:hover {
+            color: #8A6340;
+          }
+      }
     }
   }
   ul {
@@ -32,4 +45,12 @@ body, input, select, textarea {
       }
     }
   }
+}
+
+.typeform-popup-wrapper.typeform-popup-mode-popup {
+width: calc(100vw - 200px);
+height: calc(100vh - 20px);
+top: 100px;
+left: 100px;
+z-index: 100;
 }
