@@ -22,9 +22,9 @@
 											<li><a href="#"><img src="assets/images/brightdigit.svg"/></a></li>
 					</ul>
 					<ul class="icons">
+						<li><a href="http://brightdigit.typeform.com/to/vYDCWR" class="icon round fa-list-alt"><span class="label">Survey</span></a></li>
 						<li><a href="http://meetup.com/Lansing-Marketing-Hackers/" class="icon round fa-meetup" target="_blank"><span class="label">Meetup</span></a></li>
 						<li><a href="http://facebook.com/Lansing-Marketing-Hackers-1962945503936436/" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="http://brightdigit.typeform.com/to/vYDCWR" class="icon round fa-list-alt"><span class="label">Survey</span></a></li>
 					</ul>
 				</div>
 
@@ -64,13 +64,19 @@
 						<div class="content">
 							<p>Lansing Marketing Hackers is a community dedicated to marketers and techies who want to learn how to be power users in marketing apps and services.</p>
 						</div>
+						<footer>
+							<a href="http://meetup.com/Lansing-Marketing-Hackers/" class="button alt" target="_blank"><i class="fa fa-meetup" aria-hidden="true"></i>Meetup</a>
+							<a href="http://facebook.com/Lansing-Marketing-Hackers-1962945503936436/" class="button alt" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
+							<br>
+							<a href="https://brightdigit.typeform.com/to/vYDCWR" target="_blank" class="button alt">Fill Out Our Survey</a>
+						</footer>
 					</article>
 				</div>
 				<a href="#two" class="more">Give Us Your Input</a>
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
+			<section id="two" class="wrapper post bg-img" data-bg="banner3.jpg">
 				<div class="inner">
 					<article class="box">
 						<header>
@@ -108,12 +114,12 @@
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper post bg-img" data-bg="banner.jpg">
-	
+
 				<div class="inner">
 					<ul class="icons">
 						<li><a href="http://meetup.com/Lansing-Marketing-Hackers/" class="icon round fa-meetup" target="_blank"><span class="label">Meetup</span></a></li>
-						<li><a href="http://facebook.com/Lansing-Marketing-Hackers-1962945503936436/" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="http://brightdigit.typeform.com/to/vYDCWR" class="icon round fa-list-alt"><span class="label">Survey</span></a></li>
+						<li><a href="http://facebook.com/Lansing-Marketing-Hackers-1962945503936436/" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
 					</ul>
 
 					<div class="copyright">

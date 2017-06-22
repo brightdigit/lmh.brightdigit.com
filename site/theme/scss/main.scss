@@ -47,10 +47,13 @@ body, input, select, textarea {
   }
 }
 
-.typeform-popup-wrapper.typeform-popup-mode-popup {
-width: calc(100vw - 200px);
-height: calc(100vh - 20px);
-top: 100px;
-left: 100px;
-z-index: 100;
+#one {
+  footer {
+    line-height: 3.5em;
+    a {
+      i.fa {
+        margin-right: 5px;
+      }
+    }
+  }
 }
