@@ -57,3 +57,22 @@ body, input, select, textarea {
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+
+  #header {
+    .logo {
+      ul {
+        li {
+          img {
+            height: 1em;
+          }
+        }
+      }
+      .icons {
+        display: none;
+      }
+    }
+  }
+
+}
