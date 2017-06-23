@@ -13,6 +13,16 @@
 	</head>
 	<body>
 
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-33667276-11', 'auto');
+		ga('send', 'pageview');
+
+		</script>
 		<!-- Header -->
 			<header id="header">
 				<div class="logo"><a href="index.html">Sponsored By </a>
@@ -22,7 +32,7 @@
 											<li><a href="http://www.brightdigit.com"><img src="assets/images/brightdigit.svg"/></a></li>
 					</ul>
 					<ul class="icons">
-						<li><a title="Our Poster" href="/assets/Lansing-Marketing-Hackers.pdf" class="icon round fa-file-pdf-o"><span class="label">Poster</span></a></li>
+						<li><a title="Our Flyer" href="/assets/Lansing-Marketing-Hackers.pdf" class="icon round fa-file-pdf-o"><span class="label">Flyer</span></a></li>
 						<li><a title="Our Survey" href="http://brightdigit.typeform.com/to/vYDCWR" class="icon round fa-list-alt"><span class="label">Survey</span></a></li>
 						<li><a title="Our Meetup" href="http://meetup.com/Lansing-Marketing-Hackers/" class="icon round fa-meetup" target="_blank"><span class="label">Meetup</span></a></li>
 						<li><a title="Our Facebook Page" href="http://facebook.com/Lansing-Marketing-Hackers-1962945503936436/" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
@@ -57,7 +67,7 @@
 			</section>
 
 		<!-- One -->
-			<section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
+			<section id="one" class="wrapper post bg-img" data-bg="banner4.jpg">
 				<div class="inner">
 					<article class="box">
 						<header>
@@ -78,7 +88,7 @@
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper post bg-img" data-bg="banner3.jpg">
+			<section id="two" class="wrapper post bg-img" data-bg="banner6.jpg">
 				<div class="inner">
 					<article class="box">
 						<header>
@@ -96,7 +106,7 @@
 			</section>
 
 		<!-- Three -->
-			<section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
+			<section id="three" class="wrapper post bg-img" data-bg="banner2.jpg">
 				<div class="inner">
 					<article class="box">
 						<header>
@@ -116,17 +126,17 @@
 
 
 					<!-- Four -->
-						<section id="four" class="wrapper post bg-img" data-bg="banner4.jpg">
+						<section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
 							<div class="inner">
 								<article class="box">
 									<header>
 										<h2>Help the Community</h2>
 									</header>
 									<div class="content">
-										<p>Let others know about the community. <a href="/assets/Lansing-Marketing-Hackers.pdf">Download the pdf</a> and share it with others. </p>
+										<p>Let others know about the meetup and how they can find more info. <a href="/assets/Lansing-Marketing-Hackers.pdf">Download our flyer</a> and share our info. </p>
 									</div>
 									<footer>
-										<a href="/assets/Lansing-Marketing-Hackers.pdf" class="button alt"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Poster</a>
+										<a href="/assets/Lansing-Marketing-Hackers.pdf" class="button alt"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Flyer</a>
 										<a href="mailto:?&body=Hello!%0A%0AI%20wanted%20to%20let%20you%20know%20about%20a%20new%20community%20meetup%20in%20Lansing%20called%20%22Lansing%20Marketing%20Hackers%22.%20They%20are%20looking%20for%20more%20info%20and%20would%20love%20for%20you%20to%20fill%20out%20this%20survey%3A%0Ahttp%3A//brightdigit.typeform.com/to/vYDCWR%0A%0AIf%20you%20would%20like%20to%20know%20more%20check%20out%20the%20link%20here%3A%0Ahttp%3A//lmh.brightdigit.com/%0A%0AThanks!" class="button alt"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a>
 										<a href="https://twitter.com/home?status=Are%20you%20interested%20in%20learning%20more%20about%20technology%20in%20marketing?%20http%3A//lmh.brightdigit.com%20%40brightdigit" class="button alt"><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</a>
 
@@ -142,7 +152,7 @@
 				<div class="inner">
 					<img id="logo" src="/assets/images/logo.svg">
 					<ul class="icons">
-						<li><a href="/assets/Lansing-Marketing-Hackers.pdf" class="icon round fa-file-pdf-o" target="_blank"><span class="label">Poster</span></a></li>
+						<li><a href="/assets/Lansing-Marketing-Hackers.pdf" class="icon round fa-file-pdf-o" target="_blank"><span class="label">Flyer</span></a></li>
 						<li><a href="http://meetup.com/Lansing-Marketing-Hackers/" class="icon round fa-meetup" target="_blank"><span class="label">Meetup</span></a></li>
 						<li><a href="http://brightdigit.typeform.com/to/vYDCWR" class="icon round fa-list-alt"><span class="label">Survey</span></a></li>
 						<li><a href="http://facebook.com/Lansing-Marketing-Hackers-1962945503936436/" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
@@ -156,11 +166,6 @@
 			</footer>
 
 		<!-- Scripts -->
-			<!-- <script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script> -->
 			<script src="js/main.js"></script>
 
 	</body>

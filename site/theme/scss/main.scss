@@ -58,6 +58,9 @@ body, input, select, textarea {
 
   footer {
     line-height: 3.5em;
+    &#footer {
+      background-size: cover;
+    }
     a {
       i.fa {
         margin-right: 5px;
