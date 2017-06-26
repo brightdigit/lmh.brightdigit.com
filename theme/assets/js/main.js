@@ -103,8 +103,8 @@ require("./util");
 				m.addClass('scrolly');
 
 				p.scrollex({
-					top: '40vh',
-					bottom: '40vh',
+					top: '-20vh',
+					bottom: '-20vh',
 					terminate: 	function() { m.removeClass('current'); i.removeClass('current'); },
 					enter: 		function() { m.addClass('current'); i.addClass('current'); },
 					leave: 		function() { m.removeClass('current'); i.removeClass('current'); }
